@@ -1,0 +1,13 @@
+# Python caches
+__pycache__/
+*.pyc
+
+# Environments
+.venv/
+env/
+venv/
+
+# Build artifacts (if you compile it to an .exe later)
+build/
+dist/
+*.spec

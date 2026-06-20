@@ -1,0 +1,10 @@
+{
+  "leetcode_username": "Arvin-Leung",
+  "check_interval_seconds": 15,
+  "blocked_processes": [
+    "steam.exe",
+    "riotclientservices.exe",
+    "epicgameslauncher.exe",
+    "battle.net.exe"
+  ]
+}
