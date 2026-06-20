@@ -11,3 +11,6 @@ venv/
 build/
 dist/
 *.spec
+
+# Ignore the actual active configuration file
+config.json

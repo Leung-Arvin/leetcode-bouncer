@@ -1,0 +1,11 @@
+{
+  "leetcode_username": "please replace with your leetcode username",
+  "check_interval_seconds": 15,
+  "daily_goal": 1,
+  "blocked_processes": [
+    "steam.exe",
+    "riotclientservices.exe",
+    "epicgameslauncher.exe",
+    "battle.net.exe"
+  ] 
+}
