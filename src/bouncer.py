@@ -4,11 +4,6 @@ def enforce_rules(should_allow_gaming, blocked_processes):
     if should_allow_gaming:
         return []
         
-    # INTENTIONAL REGRESSION BUG FOR TESTING CI/CD GATES:
-    # Referencing an undefined, non-existent variable to crash the script
-    if trigger_broken_pipeline_error:
-        pass
-
     killed_apps = []
     for proc in psutil.process_iter(['name']):
         try:
