@@ -45,7 +45,7 @@ pip install -r requirements.txt
 Open config.json in your root directory and map out your execution parameters:
 
 JSON
-{
+`{
   "leetcode_username": "Leung-Arvin" // Replace mine with your username,
   "check_interval_seconds": 15,
   "daily_goal": 1,
@@ -55,7 +55,8 @@ JSON
     "epicgameslauncher.exe",
     "battle.net.exe"
   ]
-}
+} `
+ 
 Important: Ensure your LeetCode account privacy settings allow Recent Submissions to be visible to the public profile engine so the API layer can parse your data.
 
 ### Usage
