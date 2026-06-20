@@ -9,35 +9,33 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    # STEP 1: Must always pull down code FIRST so files like requirements.txt exist in the workspace
     - name: Checkout Repository Code
       uses: actions/checkout@v4
 
+    # STEP 2: Initialize runtime setup after files are pulled down
     - name: Set up Python Runtime
       uses: actions/setup-python@v5
       with:
         python-version: '3.12'
         cache: 'pip'
+        cache-dependency-path: 'requirements.txt' # Explicitly guides the runner to your root file
 
     - name: Install System Dependencies
       run: |
         sudo apt-get update
-        # Install basic X11 display frameworks so CustomTkinter modules can safely initialize in headless environments
         sudo apt-get install -y python3-tk tk-dev libx11-dev
 
     - name: Install Python Package Dependencies
       run: |
         python -m pip install --upgrade pip
-        # Install linters and core app requirements
         pip install flake8 requests psutil customtkinter
 
     - name: Lint Code Architecture (Flake8)
       run: |
-        # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
-        # exit-zero treats all typos/formatting as warnings so your tests still run
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
     - name: Verify Module Compilation and Package Integrity
       run: |
-        # Verifies that Python can parse, compile, and locate all internal relative directory scripts cleanly
         python -m compileall src/
