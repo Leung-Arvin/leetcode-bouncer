@@ -1,5 +1,8 @@
 # LeetCode Bouncer
+
 An automated desktop productivity engine that monitors your public LeetCode activity and restricts access to gaming launchers until you meet your daily algorithmic problem-solving goals.
+
+<img width="428" height="559" alt="image" src="https://github.com/user-attachments/assets/524c707f-1103-4007-b77a-0d9eac77d259" />
 
 ## Key Features
 Real-time LeetCode API Syncing: Leverages LeetCode's public GraphQL infrastructure to trace your profile activity automatically.
