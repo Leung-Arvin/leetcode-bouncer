@@ -46,7 +46,7 @@ Open config.json in your root directory and map out your execution parameters:
 
 JSON
 {
-  "leetcode_username": "Leung-Arvin",
+  "leetcode_username": "Leung-Arvin" // Replace mine with your username,
   "check_interval_seconds": 15,
   "daily_goal": 1,
   "blocked_processes": [
