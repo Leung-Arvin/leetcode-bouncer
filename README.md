@@ -45,8 +45,9 @@ pip install -r requirements.txt
 Open config.json in your root directory and map out your execution parameters:
 
 JSON
+Create a copy of config.template.json and rename it to config.json
 `{
-  "leetcode_username": "Leung-Arvin" // Replace mine with your username,
+  "leetcode_username": "please replace with your leetcode username",
   "check_interval_seconds": 15,
   "daily_goal": 1,
   "blocked_processes": [
