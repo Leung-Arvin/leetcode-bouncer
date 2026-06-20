@@ -1,6 +1,7 @@
 {
-  "leetcode_username": "Arvin-Leung",
+  "leetcode_username": "Leung-Arvin",
   "check_interval_seconds": 15,
+  "daily_goal": 1,
   "blocked_processes": [
     "steam.exe",
     "riotclientservices.exe",
